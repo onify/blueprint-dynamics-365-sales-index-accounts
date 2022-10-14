@@ -145,12 +145,11 @@ environment.output.accounts.forEach(async function(account) {
         description: (account.description ? account.description : null),
         tag: ["dynamics365", "account"],
         owner: account['_ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname'],
-	    status: account['statuscode@OData.Community.Display.V1.FormattedValue'],
-		attribute: {
+        status: account['statuscode@OData.Community.Display.V1.FormattedValue'],
+        attribute: {
             accountnumber: account.accountnumber,
             _etag : account['@odata.etag'],
             _accountid: account.accountid,
-            accountnumber: account.accountnumber,
             address1_city: account.address1_city,
             address1_line1: account.address1_line1,
             address1_postalcode: account.address1_postalcode,
